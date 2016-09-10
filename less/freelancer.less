@@ -6,6 +6,10 @@ body {
 	overflow-x: hidden;
 }
 
+#rdv {
+  color: @rdv;
+}
+
 p {
 	font-size: 20px;
 }
@@ -41,7 +45,7 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f005";
+    // content: "\f005";
     font-family: FontAwesome;
     display: inline-block;
     position: relative;
@@ -96,6 +100,20 @@ header {
 			font-size: 1.25em;
 			font-weight: 300;
 		}
+    .tel {
+      font-size: 1.75em;
+      color: @theme-primary;
+      background: @gray-lighter;
+      border: 15px solid @gray-lighter;
+    }
+    .tel:before {
+      content: "\f095";
+      font-family: FontAwesome;
+      display: inline-block;
+      position: relative;
+      font-size: 0.9em;
+      padding-right: 0.5em;
+    }
 	}
 }
 
