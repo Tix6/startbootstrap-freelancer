@@ -10,6 +10,19 @@ body {
   color: @rdv;
 }
 
+strong {
+  text-shadow: 1px 1px 1px @gray;
+}
+
+.rdv {
+  background: @rdv;
+}
+
+.rdv:hover {
+  background: lighten(@rdv, 10.0%);
+  color: white !important;
+}
+
 p {
 	font-size: 20px;
 }
@@ -364,6 +377,9 @@ footer {
 		padding: 25px 0;
 		background-color: darken(@theme-primary, 5%);
 	}
+  p {
+    font-size: 1em;
+  }
 }
 
 // Buttons
