@@ -4,11 +4,23 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  font-size: 16px;
 }
 #rdv {
   color: #f44336;
+}
+strong {
+  text-shadow: 1px 1px 1px #555555;
+  font-weight: 400;
+}
+.rdv {
+  background: #f44336;
+}
+.rdv:hover {
+  background: #f77066;
+  color: white !important;
 }
 p {
   font-size: 20px;
@@ -16,13 +28,31 @@ p {
 p.small {
   font-size: 16px;
 }
+#prices .panel {
+  border-radius: 0;
+  border: 0;
+}
+#prices .panel-heading {
+  background-color: #4FC3F7;
+  color: white;
+  border-radius: 0;
+}
+#prices .panel-body {
+  font-size: 2em;
+  background: #eeeeee;
+}
 a,
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #4FC3F7;
+  color: inherit;
+  font-size: 1em;
+  text-decoration: underline;
   outline: none;
+}
+.page-scroll > a {
+  text-decoration: none;
 }
 h1,
 h2,
@@ -33,6 +63,7 @@ h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+  display: block;
 }
 hr.star-light,
 hr.star-primary {
@@ -213,54 +244,6 @@ section.success {
     padding-top: 75px;
   }
 }
-#portfolio .portfolio-item {
-  margin: 0 0 15px;
-  right: 0;
-}
-#portfolio .portfolio-item .portfolio-link {
-  display: block;
-  position: relative;
-  max-width: 400px;
-  margin: 0 auto;
-}
-#portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(79, 195, 247, 0.9);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-}
-#portfolio .portfolio-item .portfolio-link .caption:hover {
-  opacity: 1;
-}
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  font-size: 20px;
-  text-align: center;
-  top: 50%;
-  margin-top: -12px;
-  color: white;
-}
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
-  margin-top: -12px;
-}
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
-  margin: 0;
-}
-#portfolio * {
-  z-index: 2;
-}
-@media (min-width: 767px) {
-  #portfolio .portfolio-item {
-    margin: 0 0 30px;
-  }
-}
 .floating-label-form-group {
   position: relative;
   margin-bottom: 0;
@@ -326,6 +309,9 @@ footer .footer-col {
 footer .footer-below {
   padding: 25px 0;
   background-color: #1c2429;
+}
+footer p {
+  font-size: 1em;
 }
 .btn-outline {
   color: white;
@@ -459,63 +445,4 @@ fieldset[disabled] .btn-success.active {
 }
 .scroll-top .btn:focus {
   outline: none;
-}
-.portfolio-modal .modal-content {
-  border-radius: 0;
-  background-clip: border-box;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
-  min-height: 100%;
-  padding: 100px 0;
-  text-align: center;
-}
-.portfolio-modal .modal-content h2 {
-  margin: 0;
-  font-size: 3em;
-}
-.portfolio-modal .modal-content img {
-  margin-bottom: 30px;
-}
-.portfolio-modal .modal-content .item-details {
-  margin: 30px 0;
-}
-.portfolio-modal .close-modal {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: transparent;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
-}
-.portfolio-modal .close-modal:hover {
-  opacity: 0.3;
-}
-.portfolio-modal .close-modal .lr {
-  height: 75px;
-  width: 1px;
-  margin-left: 35px;
-  background-color: #263238;
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  /* Safari and Chrome */
-  z-index: 1051;
-}
-.portfolio-modal .close-modal .lr .rl {
-  height: 75px;
-  width: 1px;
-  background-color: #263238;
-  transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  /* Safari and Chrome */
-  z-index: 1052;
-}
-.portfolio-modal .modal-backdrop {
-  opacity: 0;
-  display: none;
 }
