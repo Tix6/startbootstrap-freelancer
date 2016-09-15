@@ -11,10 +11,6 @@ body {
 #rdv {
   color: #f44336;
 }
-strong {
-  text-shadow: 1px 1px 1px #555555;
-  font-weight: 400;
-}
 .rdv {
   background: #f44336;
 }
@@ -54,13 +50,8 @@ a.active {
 .page-scroll > a {
   text-decoration: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.title {
+  font-size: 2em;
   text-transform: uppercase;
   font-weight: 700;
   display: block;
@@ -231,6 +222,12 @@ section {
 section h2 {
   margin: 0;
   font-size: 3em;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  section h2 {
+    font-size: 2em;
+  }
 }
 section.success {
   background: #4FC3F7;
@@ -242,6 +239,10 @@ section.success {
   }
   section.first {
     padding-top: 75px;
+  }
+  hr.star-light,
+  hr.star-primary {
+    max-width: 100px;
   }
 }
 .floating-label-form-group {
@@ -445,4 +446,9 @@ fieldset[disabled] .btn-success.active {
 }
 .scroll-top .btn:focus {
   outline: none;
+}
+#location {
+  width: 100%;
+  min-height: 300px;
+  height: auto;
 }
