@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Istok Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
   font-size: 16px;
 }
@@ -24,6 +24,23 @@ p {
 p.small {
   font-size: 16px;
 }
+#about p:first-child {
+  font-weight: bolder;
+}
+#seance li {
+  margin: 10px 0 10px 0;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+#seance li + p {
+  font-style: italic;
+  font-size: 1em;
+}
+#seance p:last-child {
+  margin-top: 10px;
+  font-size: 1em;
+  font-style: italic;
+}
 #prices .panel {
   border-radius: 0;
   border: 0;
@@ -36,6 +53,19 @@ p.small {
 #prices .panel-body {
   font-size: 2em;
   background: #eeeeee;
+}
+#prices .price {
+  color: #4FC3F7;
+  font-style: normal;
+  font-size: 1.5em;
+}
+#prices .price:after {
+  content: '€';
+  position: absolute;
+  color: #444;
+  font-size: 0.6em;
+  margin-left: 0.3em;
+  margin-top: 0.6em;
 }
 a,
 a:hover,
@@ -106,7 +136,6 @@ header img {
 }
 header .intro-text .name {
   display: block;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
@@ -448,7 +477,8 @@ fieldset[disabled] .btn-success.active {
   outline: none;
 }
 #location {
+  margin-top: 20px;
   width: 100%;
-  min-height: 300px;
+  min-height: 400px;
   height: auto;
 }
