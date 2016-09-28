@@ -55,14 +55,13 @@ p.small {
   background: #eeeeee;
 }
 #prices .price {
-  color: #4FC3F7;
+  color: black;
   font-style: normal;
   font-size: 1.5em;
 }
 #prices .price:after {
   content: '€';
   position: absolute;
-  color: #444;
   font-size: 0.6em;
   margin-left: 0.3em;
   margin-top: 0.6em;
@@ -137,6 +136,7 @@ header img {
 header .intro-text .name {
   display: block;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
   font-weight: 700;
   font-size: 2em;
 }
