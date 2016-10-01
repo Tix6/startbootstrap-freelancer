@@ -25,6 +25,9 @@
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" />
 
+    <!-- google re-captcha -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -256,11 +259,20 @@
               <br>
               <div id="success"></div>
               <div class="row">
-                <div class="form-group col-xs-12">
-                  <button type="submit" class="btn btn-success btn-lg">Envoyer</button>
+                <div id="validation-container" class="form-group col-xs-12">
                 </div>
               </div>
             </form>
+            <!-- captcha -->
+            <script>
+            var validation = function()
+            {
+                document.getElementById('captcha').remove();
+                var v = document.getElementById('validation-container');
+                v.innerHTML = '<button type="submit" class="btn btn-success btn-lg">Envoyer</button>';
+            }
+            </script>
+            <div id="captcha" class="g-recaptcha" data-callback="validation" data-sitekey="6LcGJAgUAAAAAMbzS5i7Sci0_eM-YzkJ8uB_rXZK"></div>
           </div>
         </div>
       </div>

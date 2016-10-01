@@ -1,5 +1,4 @@
 $(function() {
-// suleidriss@gmail.com
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
