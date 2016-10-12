@@ -2,9 +2,49 @@
 @import "mixins.less";
 
 body {
-	font-family: 'Istok Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	overflow-x: hidden;
-    font-size: 16px;
+  font-family: 'Istok Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+.media > .media-body > .media-heading {
+  margin-top: 30px;
+  font-size: 1.2em;
+  color: @theme-success;
+  font-weight: bold;
+}
+
+.media:hover > .media-body > .media-heading {
+  transition: 0.5s;
+  padding-left: 15px;
+}
+
+.media > .media-body > .media-heading {
+   transition: 0.5s;
+   padding-left: 0;
+}
+
+.media img {
+    width: 200px;
+    margin: 10px;
+    height: 120px;
+    object-fit: cover;
+    opacity: 0.7;
+    border-radius: 5%;
+    transition: 0.5s;
+}
+
+.media:hover img {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.media {
+  margin: 25px 0 25px 0;
+}
+
+.media > .media-body > p {
+  font-size: 1em;
 }
 
 #rdv {
