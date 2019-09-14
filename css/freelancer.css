@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2016 Start Bootstrap
+ * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
@@ -36,7 +36,22 @@ body {
   opacity: 1;
 }
 .media {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   margin: 25px 0 25px 0;
+}
+@media screen and (max-width: 640px) {
+  .media {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .media img {
+    order: 1;
+  }
+  .media > .media-body {
+    order: 2;
+  }
 }
 .media > .media-body > p {
   font-size: 1em;
@@ -514,4 +529,21 @@ fieldset[disabled] .btn-success.active {
   width: 100%;
   min-height: 400px;
   height: auto;
+}
+.header-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-cta > .cta {
+  margin-top: 24px;
+  background-color: #eee;
+  border: 1px solid #333;
+  text-decoration: none;
+  padding: 15px;
+}
+.header-cta > .cta > a {
+  font-size: 1.75em;
+  text-decoration: none;
+  color: #263238;
 }

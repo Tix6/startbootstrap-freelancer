@@ -40,7 +40,23 @@ body {
 }
 
 .media {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   margin: 25px 0 25px 0;
+}
+
+@media screen and (max-width: 640px) {
+  .media {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .media img {
+    order: 1;
+  }
+  .media > .media-body {
+    order: 2;
+  }
 }
 
 .media > .media-body > p {
@@ -501,4 +517,24 @@ footer {
   width: 100%;
   min-height: 400px;
   height: auto;
+}
+
+.header-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-cta > .cta {
+  margin-top: 24px;
+  background-color: #eee;
+  border: 1px solid #333;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.header-cta > .cta > a {
+  font-size: 1.75em;
+  text-decoration: none;
+  color: #263238;
 }
